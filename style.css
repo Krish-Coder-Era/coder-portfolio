@@ -1,0 +1,330 @@
+ * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-style: oblique;
+        }
+
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #265a6e;
+            color: white;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+          background-color: #2980a2;
+            border-bottom: 2px solid rgb(22, 5, 95);
+        }
+
+        h1 {
+            font-size: 2rem;
+        }
+
+        .navbar {
+            background-color: #103a4b;
+            border: 2px solid rgb(4, 4, 13);
+            border-radius: 20px;
+            padding: 10px 0px;
+        }
+
+        .navbar ul {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            list-style: none;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 16px;
+            border-radius: 20px;
+            transition: all 0.3s ease;
+        }
+
+        .navbar a:hover {
+            box-shadow: 0 0 10px #00f7ff, 0 0 20px #00f7ff;
+            background-color: #335b5d;
+        }
+         @keyframes slideIn {
+            0% {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+
+            100% {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        #hello {
+            animation-name: slideIn;
+            animation-duration: 3s;
+            font-size: 2rem;
+            color: #00f7ff;
+            font-weight: 700;
+            animation-timing-function: ease-out;
+            animation-fill-mode: forwards;
+        }
+
+
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 30px 20px;
+            text-align: center;
+        }
+
+        @keyframes fadeSlide {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .img-div {
+            animation: fadeSlide 1s ease-out forwards;
+            font-size: 2rem;
+            color: #00f7ff;
+            font-weight: 700;
+        }
+
+        .intro {
+            margin-bottom: 2px;
+            font-size: 1.2rem;
+        }
+
+        .img-div {
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+        }
+
+        .img-div img {
+            width: 80%;
+            max-width: 400px;
+            border-radius: 100%;
+            transition: box-shadow 0.3s ease;
+        }
+
+        .img-div img:hover {
+            box-shadow: 0 0 10px #00f7ff, 0 0 20px #00f7ff, 0 0 30px #00f7ff;
+        }
+
+  .first-section h1 {
+        text-align: center;
+        margin-top: 50px;
+        font-size: 2rem;
+    }
+
+    .project-section {
+        text-align: center;
+        padding: 60px 20px;
+    }
+
+    .project-section h1 {
+        font-size: 2.5em;
+        margin-bottom: 40px;
+    }
+
+    .project-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 100px;
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 70vh;
+    }
+
+    .project-card {
+        background-color: #103341;
+        -webkit-margin-collapse: 0px;
+        padding: 90px;
+        align-content: center;
+        width: 100%;
+        border-radius: 20px;
+        transition: transform 0.3s ease;
+    }
+
+    .project-card:hover {
+        transform: translateY(-10px);
+    }
+
+    .project-icon {
+        font-size: 40px;
+        margin-bottom: 15px;
+        color: #f0db4f;
+    }
+
+    .project-title {
+        font-size: 1.2em;
+        margin-bottom: 10px;
+        font-weight: bold;
+    }
+
+    .project-desc {
+        font-size: 0.95em;
+        color: #ccc;
+    }
+
+    @keyframes fadeSlide {
+        0% {
+            opacity: 0;
+            transform: translateY(-30px);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .first-section h1 {
+        animation: fadeSlide 1.5s ease-out forwards;
+        font-size: 2.5rem;
+        color: #f0f4f4;
+        font-weight: 700;
+    } .container {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 40px;
+            max-width: 1200px;
+            margin: auto;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .image-section img {
+            width: 300px;
+            border-radius: 1000px;
+            margin-right: 40px;
+        }
+
+        .text-section {
+            max-width: 600px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            color: #f2eeee;
+        }
+
+        .pronunciation {
+            font-style: italic;
+            color: #ccc;
+            margin-bottom: 20px;
+        }
+
+        p {
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .text-section h1 {
+            text-decoration: underline;
+        }
+
+    .skills-section {
+        text-align: center;
+        padding: 60px 20px;
+    }
+
+    .skills-section h1 {
+        font-size: 2.5em;
+        margin-bottom: 40px;
+    }
+
+    .skills-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 150px;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .skill-card {
+        background-color: #103341;
+       -webkit-margin-collapse: ;
+        padding: 40px;
+        width: 100%;
+        border-radius: 12px;
+        transition: transform 0.3s ease;
+    }
+
+    .skill-card:hover {
+        transform: translateY(-10px);
+    }
+
+    .skill-icon {
+        font-size: 40px;
+        margin-bottom: 15px;
+        color: #f0db4f;
+    }
+
+    .skill-title {
+        font-size: 1.2em;
+        margin-bottom: 10px;
+        font-weight: bold;
+    }
+
+    .skill-desc {
+        font-size: 0.95em;
+        color: #ccc;
+    }
+    @keyframes fadeSlide {
+            0% {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .skills-section h1 {
+            animation: fadeSlide 1.5s ease-out forwards;
+            font-size: 2.5rem;
+            color: #f0f4f4;
+            font-weight: 700;
+        }.footer {
+             background-color: #2980a2;
+            border-top: 5px solid black;
+            color: #0f0101;
+            text-align: center;
+            padding: 20px 10px;
+        }
+
+        .social-icons {
+            margin-bottom: 10px;
+        }
+
+        .social-icons a {
+            color: #f1f1f1;
+            margin: 0 10px;
+            font-size: 24px;
+            transition: color 0.3s ease;
+        }
+
+        .social-icons a:hover {
+            color: #0bb4f7;
+        }
+
+        .footer-text {
+            font-size: 14px;
+            font-weight: 700;
+            margin-top: 5px;
+        }
